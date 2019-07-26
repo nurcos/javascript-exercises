@@ -1,25 +1,44 @@
-function add () {
-	
+function add (a, b) {
+	return a + b;
 }
 
-function subtract () {
-	
+function subtract (a, b) {
+	return a - b;
 }
 
-function sum () {
-	
+function sum (...numbers) {
+	let sum = 0;
+	let array = numbers[0];
+
+	array.forEach((item) => {
+    sum += item;
+  });
+
+	return sum;
 }
 
-function multiply () {
-	
+function multiply (...numbers) {
+	let sum = 1;
+	let array = numbers[0];
+
+	array.forEach((item) => {
+		sum *= item;
+	});
+
+	return sum;
 }
 
-function power() {
-	
+function power(a, b) {
+	return Math.pow(a, b);
 }
 
-function factorial() {
-	
+function factorial(a) {
+	let sum = 1;
+	for(let i = a; i > 1; i--){
+		sum *= i;
+	}
+
+	return sum;
 }
 
 module.exports = {
