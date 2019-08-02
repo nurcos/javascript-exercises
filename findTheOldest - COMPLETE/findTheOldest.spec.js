@@ -19,9 +19,9 @@ describe('findTheOldest', function() {
         yearOfDeath: 1941
       },
     ]
-    expect(findTheOldest(people).name).toEqual('Ray');
+    expect(findTheOldest(people)).toEqual('Ray');
   });
-  xit('finds the oldest person if someone is still living', function() {
+  it('finds the oldest person if someone is still living', function() {
     const people = [
       {
         name: 'Carly',
@@ -38,9 +38,9 @@ describe('findTheOldest', function() {
         yearOfDeath: 1941
       },
     ]
-    expect(findTheOldest(people).name).toEqual('Ray');
+    expect(findTheOldest(people)).toEqual('Ray');
   });
-  xit('finds the oldest person if the OLDEST is still living', function() {
+  it('finds the oldest person if the OLDEST is still living', function() {
     const people = [
       {
         name: 'Carly',
@@ -57,7 +57,7 @@ describe('findTheOldest', function() {
         yearOfDeath: 1941
       },
     ]
-    expect(findTheOldest(people).name).toEqual('Carly');
+    expect(findTheOldest(people)).toEqual('Carly');
   });
 
 });
